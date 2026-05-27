@@ -3,389 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>상수 룸싸롱 상세정보 및 이용절차 | 상수 룸싸롱 TOP5</title>
-  <meta name="description" content="상수역 먹자 인근 바이어 접대에 면이 서는 럭셔리 시설과 투명 정찰 주종을 명시한 탑클래스 룸싸롱 TOP5 추천. 위치 시그널과 정찰 가격 안내 수록.">
-  <meta name="keywords" content="상수 룸싸롱 TOP5, 상수 룸싸롱 위치, 상수 룸싸롱 가격, 상수 룸싸롱 시스템">
-  <link rel="canonical" href="https://t3b06-ss-room-top5-2.pages.dev/about.html">
+  <title>상수 룸싸롱 상세 정보 | 상수 룸싸롱 TOP5</title>
+  <meta name="description" content="상수의 대표 명소인 상수역 1번 출구, 와우산로 미술학원 거리, 상수 극동방송 인근 최상급 룸싸롱 팩트북 가이드.">
   <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b06-ss-room-top5-2">
+  <meta name="bpaas-design-theme" content="kr-midnight-glass">
   <style>
-    
     :root {
-      --bg-dark: #1c1917;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #44403c;
-      --accent-neon: #fbbf24;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
+      --bg-glass: #060913;
+      --card-glass: rgba(255, 255, 255, 0.03);
+      --accent-glass: #06b6d4;
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
     }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: sans-serif, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 28px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-      text-shadow: 0 0 8px var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 140px 20px 100px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      margin-bottom: 24px;
-      letter-spacing: -0.06em;
-      line-height: 1.25;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    
-    .hero-glow p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 35px;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
-      padding: 18px;
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      border-radius: 8px;
-      margin: 25px auto;
-      max-width: 600px;
-      font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      text-align: center;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-    
-    .phone-bar a:hover {
-      text-shadow: 0 0 10px var(--accent-neon);
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 15px 36px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      border-radius: 9999px;
-      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
-      transition: all 0.3s ease;
-      letter-spacing: 0.03em;
-    }
-    
-    .neon-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
-    }
-    
-    .sec-wrap {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 45px;
-      backdrop-filter: blur(10px);
-      margin-bottom: 45px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-    
-    .glass-box h2 {
-      font-size: 2.2rem;
-      font-weight: 900;
-      margin-bottom: 28px;
-      color: #fff;
-      border-left: 5px solid var(--accent-neon);
-      padding-left: 20px;
-      letter-spacing: -0.04em;
-    }
-    
-    .glass-box p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      text-align: justify;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.015);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 28px;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: -0.02em;
-    }
-    
-    .mini-card p {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .premium-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      color: var(--text-main);
-    }
-    
-    .premium-table th {
-      background: rgba(255,255,255,0.03);
-      padding: 16px;
-      border-bottom: 2px solid var(--border-color);
-      font-weight: 800;
-      text-align: left;
-    }
-    
-    .premium-table td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      font-size: 1.05rem;
-    }
-    
-    .premium-table tbody tr:hover {
-      background: rgba(255,255,255,0.01);
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 24px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.88rem;
-      color: var(--accent-neon);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    
-    .reviewer-text {
-      font-size: 1.02rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.5);
-      border-top: 1px solid var(--border-color);
-      padding: 50px 20px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 12px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background-color: var(--bg-glass); color: var(--text-main); font-family: system-ui, -apple-system, sans-serif; line-height: 1.8; padding: 0 25px; }
+    .glass-wrapper { max-width: 950px; margin: 0 auto; padding: 70px 0; }
+    header.glass-header { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(15px); border-bottom: 1px solid var(--border-glass); position: sticky; top: 0; z-index: 100; border-radius: 8px; margin-bottom: 50px; }
+    .glass-nav-container { display: flex; justify-content: space-between; align-items: center; padding: 18px 25px; }
+    .glass-logo { font-size: 1.5rem; font-weight: 900; color: #fff; text-decoration: none; background: linear-gradient(135deg, #fff, var(--accent-glass)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glass-links a { color: var(--text-muted); text-decoration: none; margin-left: 25px; font-weight: 700; transition: color 0.3s; }
+    .glass-links a:hover { color: var(--accent-glass); text-shadow: 0 0 8px var(--accent-glass); }
+    .glass-hero { padding: 80px 20px; text-align: center; background: radial-gradient(circle at top, rgba(6, 182, 212, 0.15) 0%, transparent 70%); border-radius: 20px; border: 1px solid var(--border-glass); margin-bottom: 50px; }
+    .glass-hero h1 { font-size: 3rem; font-weight: 900; color: #fff; margin-bottom: 20px; letter-spacing: -0.04em; }
+    .glass-phone-bar { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent); padding: 20px; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); margin: 30px auto; max-width: 550px; font-size: 1.4rem; font-weight: 900; text-align: center; }
+    .glass-phone-bar a { color: var(--accent-glass); text-decoration: none; text-shadow: 0 0 10px rgba(6, 182, 212, 0.3); }
+    .glass-box { background: var(--card-glass); border: 1px solid var(--border-glass); border-radius: 16px; padding: 40px; backdrop-filter: blur(10px); margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .glass-box h2 { font-size: 2rem; font-weight: 900; margin-bottom: 25px; color: #fff; border-left: 5px solid var(--accent-glass); padding-left: 15px; }
+    .glass-box p { font-size: 1.08rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
+    .glass-review-ugc { border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: 20px; }
+    .glass-review-meta { display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--accent-glass); font-weight: 700; margin-bottom: 8px; }
+    footer.glass-footer { border-top: 1px solid var(--border-glass); padding: 40px 20px; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
+    footer.glass-footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; font-weight: 700; }
+    footer.glass-footer a:hover { color: var(--accent-glass); }
     @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.3rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 28px;
-      }
-      .premium-table {
-        font-size: 0.9rem;
-      }
+      .glass-hero h1 { font-size: 2rem; }
+      .glass-links { display: none; }
     }
-  
   </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "상수 룸싸롱 상세정보",
-      "url": "https://t3b06-ss-room-top5-2.pages.dev/about.html",
-      "description": "상수 룸싸롱의 상세 위치, 이용 프로세스 및 예약 가격 안내."
-    }
-  </script>
 </head>
 <body>
-
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">상수 룸싸롱 포털</a>
-      <nav class="nav-links">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">블로그</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero-glow">
-    <h1><span class="gradient-txt">DETAILED INFO</span> 상세 정보</h1>
-    <p>상수 로컬로서 형들이 헛돈 쓰는 일 절대 없도록 확실한 랜드마크와 투명 주종 가격을 공개합니다.</p>
-    <div class="phone-bar">
-      📞 실시간 직통 전화: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-  </section>
-
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>스토리 & 이용 동기</h2>
-      <p>정통 비즈니스 룸싸롱의 가치와 정직함을 지키기 위해 이 바닥에 뼈를 묻었음. 나 또한 젊은 날 회사 접대비를 들고 상수 일대 업소들을 전전하다가, 양아치 사장한테 속아서 맛탱이 간 가짜 양주 눈탱이 맞고 회사 자금 거덜 내서 사말이 나오던 지옥 같은 쓰라린 실책을 겪은 바 있다. 그때 굳게 다짐했지. 내 마포 강서 하늘 아래에서는 소중한 비즈니스 파트너와 형제들이 안심하고 100% 품위를 지키며 합리적으로 놀 수 있는 진짜 하이엔드 룸의 표본을 구축하겠다고. 그렇게 다듬어진 VVIP 전문 예약 번호가 바로 010-6279-0862다.</p>
-    </div>
-
-    <div class="glass-box">
-      <h2>상세 위치 시그널 & 인프라</h2>
-      <p>📌 VVIP 최상의 위치 및 편의성 가이드: 상수 최고급 상업 중심 지구 골든 타워 메인 코너에 세련되게 자리 잡고 있으며, 프라이빗 지하 주차장에서 단독 VIP 전용 비밀 통로를 통한 매장 입장이 완벽하게 연동 설계되어 보안 유지가 타의 추종을 불허한다. 초호화 최고급 인테리어와 풀 에어컨 환기 시스템 보유.</p>
-    </div>
-
-    <div class="glass-box">
-      <h2>투명 정찰 가격표</h2>
-      <p>애초에 빌지 장난을 원천 차단하기 위해 주종 및 시간 코스 견적을 명확히 고시합니다.</p>
-      
-        <table class="premium-table">
-          <thead>
-            <tr><th>VIP 룸 코스 분류</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>정통 비즈니스 퍼스트 A코스</td><td>120분</td><td>350,000원</td><td><strong>300,000원</strong></td></tr>
-            <tr><td>최고급 임페리얼 스페셜 B코스</td><td>120분</td><td>550,000원</td><td><strong>450,000원</strong></td></tr>
-            <tr><td>VVIP 프레스트지 마스터 C코스</td><td>180분</td><td>800,000원</td><td><strong>700,000원</strong></td></tr>
-          </tbody>
-        </table>
-      
-    </div>
-
-    <div class="glass-box">
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      <div style="margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
-        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 예약 없이 바로 매장으로 가도 되나요?</h4>
-        <p style="color: var(--text-muted); font-size: 1rem;">A. 주말이나 피크 타임에는 룸이 풀로 차서 워크인으로 오시면 대기 시간이 2~3시간씩 걸리거나 헛걸음하기 쉽습니다. 형들의 골든타임을 사수하고 실시간 대기실 가동 룸을 확보하기 위해 오시기 최소 30분 전 010-6279-0862 예약센터로 전화 한 통만 때려주시길 정중히 권합니다!</p>
+  <div class="glass-wrapper">
+    <header class="glass-header">
+      <div class="glass-nav-container">
+        <a href="index.html" class="glass-logo">상수 룸싸롱 GLASS</a>
+        <nav class="glass-links">
+          <a href="index.html">홈</a>
+          <a href="about.html">상세안내</a>
+          <a href="blog.html">블로그</a>
+        </nav>
       </div>
-      <div>
-        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 정찰가 외에 현장 빌지 추가금 청구가 있나요?</h4>
-        <p style="color: var(--text-muted); font-size: 1rem;">A. 단 10원짜리 하나도 허위나 부가 요금을 추가 청구하지 않습니다. 예약 단계에서 합의된 정찰 요금 그대로 카드/현금 깔끔 정산 마감해 드리니 눈탱이 걱정은 싹 접어두셔도 좋습니다!</p>
+    </header>
+
+    <main>
+      <div class="glass-box">
+        <h2>로컬 상세 지리 가이드 및 위생 평가</h2>
+        <p>로컬 격조 높은 최고급 비즈니스 룸 정보와 정찰 단가표를 정밀 1대1 대조한 프라이빗 아카이브 포털이다 브로. 일체의 중간 유입 삐끼 거품 마찰을 완벽 차단하고, 접대의 완벽한 성공과 프라이버시 물리 차단 기술을 결합한 하이엔드 공간들만 엄선했다. 자리를 빛내기 전 반드시 형의 안심 추천 번호 📞 010-6279-0862 로 통화 상담을 완료해라. 철저한 보안 서비스다.
+      
+      성공적 접대를 마친 엘리트 브로들의 이용 평점:
+      - **상수동CEO (35, IT벤처대표)**: '중요한 바이어 접대라 010-6279-0862 로 최고급 룸 예약했는데 대접받는 느낌 지대로 받음. 정찰제라 깔끔함.'
+      - **금융맨 (31, 증권사IB)**: '로컬 근처 룸에서 회식했는데 최신 오디오 마이크 조율이 예술이라 대뇌 도파민 제대로 자극 받음. 위생도 최상.'
+      - **단골컬렉터 (33, 전문직)**: '팁 장난질 없고 추가 연장할 때 billing 마찰 없이 투명하게 영수증 찍혀 나와서 완전 힐링하고 감 브로.'</p>
+        <p>엄선 제휴 스팟들은 상수역 1번 출구, 와우산로 미술학원 거리, 상수 극동방송와 물리적으로 밀착되어 있어 초행길이라도 아주 수월하게 찾을 수 있다 브로. 📞 010-6279-0862 로 미리 다이렉트 통화를 걸어 안전지대를 확실히 선점하고 지갑 버퍼를 굳건히 수호해라 브로!</p>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <p><strong>상수 룸싸롱 찐후기 가이드 포털</strong></p>
-    <p>주소: 서울특별시 상수구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a>
-      | <a href="blog.html">블로그</a>
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 상수 룸싸롱 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
-
+    <footer class="glass-footer">
+      <p>서울특별시 상수 일대 | 연락처: 010-6279-0862</p>
+      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 상수 룸싸롱 Glass Portal. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
