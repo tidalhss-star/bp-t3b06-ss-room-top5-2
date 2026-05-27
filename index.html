@@ -1,213 +1,127 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>비주류 문화 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>상수 룸싸롱 제대로 즐기기 | 상수 룸싸롱 TOP5 내돈내산 찐후기</title>
+  <meta name="description" content="비즈니스 중요한 바이어 접대나 진짜 친한 선후배들이랑 품격 있게 한잔하고 싶은 날, 어설프게 복잡한 술집이나 일반 주점 가기엔 체면이 안 서고 분위기도 안 살지? 특히 우리 상수 근처에서 진짜 프라이빗하고 고급진 정통 룸싸롱 찾으려고 검색해 보면 다 낚시용 구글 삐끼 ...">
+  <meta name="keywords" content="상수 룸싸롱, 상수 룸싸롱 TOP5, 룸싸롱 가성비, 상수 밤문화">
+  <link rel="canonical" href="https://t3b06-ss-room-top5-2.pages.dev/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="상수 룸싸롱 제대로 즐기기 | 상수 룸싸롱 TOP5 내돈내산 찐후기">
+  <meta property="og:description" content="비즈니스 중요한 바이어 접대나 진짜 친한 선후배들이랑 품격 있게 한잔하고 싶은 날, 어설프게 복잡한 술집이나 일반 주점 가기엔 체면이 안 서고 분위기도 안 살지? 특히 우리 상수 근처에서 진짜 프라이빗하고 고급진 정통 룸싸롱 찾으려고 검색해 보면 다 낚시용 구글 삐끼 ...">
+  <meta property="og:url" content="https://t3b06-ss-room-top5-2.pages.dev/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="bpaas-design-system" content="midnight-glass">
+  <meta name="bpaas-design-theme" content="kr-midnight-glass">
   <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
-    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
+    
+      :root {
+        --bg: #090d16;
+        --fg: #f1f5f9;
+        --accent: #a78bfa;
+        --muted: #94a3b8;
+        --border: rgba(255,255,255,0.08);
+      }
+      body { background: var(--bg); color: var(--fg); font-family: 'Pretendard', sans-serif; line-height: 1.8; }
+      header { border-bottom: 1px solid var(--border); padding: 20px 0; background: rgba(9, 13, 22, 0.8); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; }
+      .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+      .hero { padding: 120px 0; text-align: center; background: radial-gradient(circle at center, rgba(167, 139, 250, 0.08), transparent 70%); }
+      .hero h1 { font-size: 3.2rem; font-weight: 800; color: #fff; margin-bottom: 20px; text-shadow: 0 0 20px rgba(167, 139, 250, 0.2); }
+      .btn { display: inline-block; padding: 14px 40px; background: linear-gradient(135deg, #a78bfa, #7c3aed); color: #fff; text-decoration: none; font-weight: 700; border-radius: 30px; box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3); transition: all 0.3s; }
+      .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5); }
+      .content-section { padding: 80px 0; }
+      .card { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); backdrop-filter: blur(8px); padding: 30px; border-radius: 16px; margin-bottom: 24px; }
+      .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
+      .review-card { background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); padding: 24px; border-radius: 16px; }
+    
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid var(--border); }
+    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
+    th { background: rgba(0,0,0,0.02); font-weight: bold; }
+    header .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
+    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
+    nav a:hover { color: var(--accent); }
+    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; }
+    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
+    footer a:hover { color: var(--accent); }
+    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
+    .p-bar a { color: #fff; text-decoration: underline; }
   </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"상수 룸싸롱 스페셜 센터","url":"https://t3b06-ss-room-top5-2.pages.dev","telephone":"010-6279-0862","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"상수","addressCountry":"KR"}}</script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>비주류 문화 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>비주류 문화</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
+  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">상수.룸싸롱</a>
+      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>상수 룸싸롱 TOP5</h1>
+        <p style="font-size:1.25rem; margin-bottom:30px; opacity:0.9;">20대 후반 ~ 30대 초반 직장인 형님들의 리얼 내돈내산 가성비 밤문화 힐링 아카이브</p>
+        <a href="tel:010-6279-0862" class="btn">실시간 예약 및 가격 확인 (전화걸기)</a>
       </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h3>
-          <p>디지털 폰트가 전무하던 격변의 1960년대 한국 극장가를 상징하는 극영화 손그림 포스터와 당시 간판 화가들의 붓끝에서 창조된 특유의 볼드한 고딕 타이포그래피 서체들은 당대 시대적 ...</p>
-        </a>
-      
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="card" style="border:none;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 솔직하게 털어놓는 상수 밤문화 리얼 팩트</h2>
+          <p style="margin-bottom:20px; font-size:1.1rem; line-height:1.9;">비즈니스 중요한 바이어 접대나 진짜 친한 선후배들이랑 품격 있게 한잔하고 싶은 날, 어설프게 복잡한 술집이나 일반 주점 가기엔 체면이 안 서고 분위기도 안 살지? 특히 우리 상수 근처에서 진짜 프라이빗하고 고급진 정통 룸싸롱 찾으려고 검색해 보면 다 낚시용 구글 삐끼 글들만 널려 있어서 머리 아팠을 거임. 그래서 형이 연남 및 마포 일대에서 최정상급 퀄리티와 엄격한 정찰제를 완비한 리얼 정통 룸싸롱 정보를 제공해 주려고 함. 오시는 소중한 손님들 한 분 한 분 귀빈으로 극진하게 모실 수 있도록 형이 뒤에서 완벽하게 케어해 줄 테니 안심하고 예약해라. 예약 직통 010-6279-0862 이 번호 하나면 최상의 룸 세팅과 프라이빗 케어 서비스가 실시간으로 보장된다.</p>
+          <div style="background:rgba(0,0,0,0.01); border-left:4px solid var(--accent); padding:20px; margin:30px 0; font-style:italic;">
+            "형님들, 이상한 호객꾼(삐끼) 꼬임에 넘어가서 지하 어두컴컴한 지하실 끌려가서 양주 한 병에 백만 원씩 뜯기는 시대는 지났음. 형이 딱 가격 정찰제 걸고 에이스들만 매칭해 주니까 의심 말고 연락하길."
+          </div>
+          <p>우리가 제공하는 룸싸롱 서비스는 일반적인 밤문화 업소들과는 궤를 달리하는 하이엔드급 VIP 전용 라운지 스타일임. 중요한 비즈니스 계약 성사를 위한 접대 자리나, 특별한 날 품격 있는 모임을 원하는 형님 동생들을 위해 100% 투명하고 정직한 견적으로만 운영하고 있음. 빌지 장난이나 어설픈 꼼수 가격은 아예 취급도 안 하니까 정통 룸의 참재미와 품격을 고스란히 느낄 수 있을 거임. 최고급 양주와 신선한 제철 과일 안주 세팅, 그리고 고급 일품 요리까지 손님들 취향에 맞춰 빈틈없이 서빙된다.</p>
+      <p>특히 이곳 상수 룸싸롱은 철저하게 보안과 프라이버시가 유지되는 독채형 대형 룸과 럭셔리한 인테리어로 마포 일대 최고 수준의 쾌적함을 자랑함. 직통 연락처 010-6279-0862로 사전에 예약 문의 한 통 주시면 원하시는 동선과 취향, 예산에 맞춰서 가장 합리적이면서도 럭셔리한 코스를 설계해 드릴 거임. 동생들, 중요한 자리 어설픈 데서 진행하다 분위기 망치지 말고 검증된 최고급 라인으로 와서 성공적인 접대와 품격 있는 밤을 경험해라. 형이 확실하게 에스코트해 준다.</p>
+        </div>
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h3>
-          <p>한국 전통 찰현악기인 해금의 뽕나무 현에 가해지는 마찰력을 극대화하고 온도 및 습도 편차에 따르는 실크 현의 수축 팽창을 방어하기 위해 벌꿀에서 추출한 밀랍 왁스와 천연 벌꿀을 엄...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h3>
-          <p>활자를 한 자 한 자 구리 틀에 부어 굳히던 19세기 활판 금속 활자 조각술은 잉크가 젖은 종이 속으로 압착되어 들어갈 때 생기는 특유의 깊은 양각 엠보싱 텍스처와 미세하게 무너지...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>아날로그 문화 컬렉터들이 선정한 강남 셔츠룸 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>아날로그 문화 컬렉터들이 선정한 강남 셔츠룸 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
+        <div style="margin-top:60px;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형님들이 직접 남겨주신 상수 룸싸롱 리얼 찐후기</h2>
+          <div class="review-grid">
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>최진혁</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">중요한 바이어 접대 자리라 걱정 많았는데 실장님이 예약 번호 010-6279-0862로 완전 VIP급 방 세팅에 에스코트까지 완벽하게 해주셔서 계약 성공적으로 마쳤습니다. 대만족입니다!</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-17</small>
+    </div>
+  
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>임재범</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">가격이 완전 정찰제라 접대비 처리하기도 너무 깔끔하네요. 수질도 연남동 탑클래스 인정합니다.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-20</small>
+    </div>
+  
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>배태환</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">역시 믿고 찾는 실장님입니다. 갈 때마다 내상 제로에 최고의 대우를 해주시니 충성 고객이 될 수밖에 없네요.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-24</small>
+    </div>
+  </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div>&copy; 2026 상수 룸싸롱 스페셜 가이드. All Rights Reserved.</div>
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
