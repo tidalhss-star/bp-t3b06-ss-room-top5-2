@@ -1,77 +1,420 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>상수 룸싸롱 상세 정보 | 상수 룸싸롱 TOP5</title>
-  <meta name="description" content="상수의 대표 명소인 상수역 1번 출구, 와우산로 미술학원 거리, 상수 극동방송 인근 최상급 룸싸롱 팩트북 가이드.">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-midnight-glass">
-  <style>
-    :root {
-      --bg-glass: #060913;
-      --card-glass: rgba(255, 255, 255, 0.03);
-      --accent-glass: #06b6d4;
-      --border-glass: rgba(255, 255, 255, 0.08);
-      --text-main: #f1f5f9;
-      --text-muted: #94a3b8;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { background-color: var(--bg-glass); color: var(--text-main); font-family: system-ui, -apple-system, sans-serif; line-height: 1.8; padding: 0 25px; }
-    .glass-wrapper { max-width: 950px; margin: 0 auto; padding: 70px 0; }
-    header.glass-header { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(15px); border-bottom: 1px solid var(--border-glass); position: sticky; top: 0; z-index: 100; border-radius: 8px; margin-bottom: 50px; }
-    .glass-nav-container { display: flex; justify-content: space-between; align-items: center; padding: 18px 25px; }
-    .glass-logo { font-size: 1.5rem; font-weight: 900; color: #fff; text-decoration: none; background: linear-gradient(135deg, #fff, var(--accent-glass)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .glass-links a { color: var(--text-muted); text-decoration: none; margin-left: 25px; font-weight: 700; transition: color 0.3s; }
-    .glass-links a:hover { color: var(--accent-glass); text-shadow: 0 0 8px var(--accent-glass); }
-    .glass-hero { padding: 80px 20px; text-align: center; background: radial-gradient(circle at top, rgba(6, 182, 212, 0.15) 0%, transparent 70%); border-radius: 20px; border: 1px solid var(--border-glass); margin-bottom: 50px; }
-    .glass-hero h1 { font-size: 3rem; font-weight: 900; color: #fff; margin-bottom: 20px; letter-spacing: -0.04em; }
-    .glass-phone-bar { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent); padding: 20px; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); margin: 30px auto; max-width: 550px; font-size: 1.4rem; font-weight: 900; text-align: center; }
-    .glass-phone-bar a { color: var(--accent-glass); text-decoration: none; text-shadow: 0 0 10px rgba(6, 182, 212, 0.3); }
-    .glass-box { background: var(--card-glass); border: 1px solid var(--border-glass); border-radius: 16px; padding: 40px; backdrop-filter: blur(10px); margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-    .glass-box h2 { font-size: 2rem; font-weight: 900; margin-bottom: 25px; color: #fff; border-left: 5px solid var(--accent-glass); padding-left: 15px; }
-    .glass-box p { font-size: 1.08rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
-    .glass-review-ugc { border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: 20px; }
-    .glass-review-meta { display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--accent-glass); font-weight: 700; margin-bottom: 8px; }
-    footer.glass-footer { border-top: 1px solid var(--border-glass); padding: 40px 20px; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
-    footer.glass-footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; font-weight: 700; }
-    footer.glass-footer a:hover { color: var(--accent-glass); }
-    @media(max-width: 768px) {
-      .glass-hero h1 { font-size: 2rem; }
-      .glass-links { display: none; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>상수 룸싸롱 TOP5 – 찐 정보 싹 다 까발린다 | 형들의 놀이터</title>
+    <meta name="description" content="상수 룸싸롱 TOP5 찐 정보. 위치, 가격대, 서비스, 형님들의 생생 후기까지. 예약 전에 반드시 확인하쇼!">
+    <meta name="keywords" content="상수 룸싸롱, 상수 룸싸롱 TOP5, 상수동 룸싸롱 정보, 상수 룸싸롱 위치, 상수 룸싸롱 가격">
+    <link rel="canonical" href="https://t3b06-ss-room-top5-2.vercel.app/info">
+    <!-- OG -->
+    <meta property="og:title" content="상수 룸싸롱 TOP5 – 씨게 뜨거운 형들의 놀이터, 정보 페이지">
+    <meta property="og:description" content="상수 룸싸롱 TOP5. 진짜 가본 놈들이 알려주는 찐 리뷰. 예약은 여기로!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b06-ss-room-top5-2.vercel.app/info">
+    <meta property="og:image" content="https://t3b06-ss-room-top5-2.vercel.app/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="상수 룸싸롱 TOP5">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="상수 룸싸롱 TOP5 – 찐 정보 싹 다 까발린다">
+    <meta name="twitter:description" content="상수 룸싸롱 TOP5 찐 정보. 형님들이 직접 검증한 정보만!">
+    <meta name="twitter:image" content="https://t3b06-ss-room-top5-2.vercel.app/og-image.jpg">
+    <style>
+        /* RESET */
+        *,*::before,*::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: #f5f5f5;
+        }
+        a {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ff6b6b;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        ul {
+            list-style: none;
+        }
+        /* LAYOUT */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+        }
+        /* SPACE */
+        :root {
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 3rem;
+            --space-xl: 4rem;
+        }
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: #ff4d4d;
+            color: #1a1a1a;
+            font-weight: 800;
+            text-transform: uppercase;
+            border: 2px solid #ff4d4d;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.05em;
+        }
+        .btn:hover {
+            background: transparent;
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+        /* HEADER */
+        .site-header {
+            background: #111;
+            border-bottom: 3px solid #ff4d4d;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .site-header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .site-header .logo a {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #f5f5f5;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+        }
+        .site-header .logo a:hover {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+        .site-header nav {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .site-header nav a {
+            color: #ccc;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .site-header nav a:hover,
+        .site-header nav a.active {
+            color: #ff4d4d;
+            border-bottom-color: #ff4d4d;
+            text-decoration: none;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            padding: 0.5rem;
+        }
+        .hamburger-menu span {
+            width: 28px;
+            height: 3px;
+            background: #f5f5f5;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #ff4d4d;
+            color: #1a1a1a !important;
+            padding: 0.5rem 1.2rem;
+            font-weight: 800;
+            border-radius: 0;
+            border: 2px solid #ff4d4d;
+            transition: all 0.2s;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .tel-link:hover {
+            background: transparent;
+            color: #ff4d4d !important;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .site-header .container {
+                flex-wrap: nowrap;
+            }
+            .site-header .logo a {
+                font-size: 1.4rem;
+            }
+            .site-header nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #111;
+                padding: 1rem 1.5rem;
+                border-bottom: 3px solid #ff4d4d;
+                gap: 1rem;
+            }
+            .site-header nav.open {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .tel-link {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+        /* HERO */
+        .hero-info {
+            padding: var(--space-xl) 0 var(--space-lg);
+            border-bottom: 2px solid #333;
+            text-align: center;
+        }
+        .hero-info h1 {
+            font-size: 3rem;
+            margin-bottom: var(--space-sm);
+            color: #f5f5f5;
+            text-shadow: 3px 3px 0 #ff4d4d;
+        }
+        .hero-info p {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero-info h1 {
+                font-size: 2rem;
+            }
+            .hero-info p {
+                font-size: 1rem;
+            }
+        }
+        /* SECTION */
+        .section {
+            padding: var(--space-lg) 0;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+            border-left: 6px solid #ff4d4d;
+            padding-left: var(--space-sm);
+        }
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+        /* CARDS */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+        .card {
+            background: #222;
+            border: 2px solid #333;
+            padding: var(--space-md);
+            transition: border-color 0.3s;
+        }
+        .card:hover {
+            border-color: #ff4d4d;
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: var(--space-xs);
+            color: #f5f5f5;
+        }
+        .card .badge {
+            display: inline-block;
+            background: #ff4d4d;
+            color: #1a1a1a;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 0.2rem 0.6rem;
+            text-transform: uppercase;
+            margin-bottom: var(--space-xs);
+        }
+        .card p {
+            color: #bbb;
+            margin-bottom: var(--space-sm);
+        }
+        .card .btn {
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: var(--space-sm) 0;
+        }
+        .faq-item summary {
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            color: #f5f5f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item summary::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: #ff4d4d;
+            font-weight: 800;
+        }
+        .faq-item[open] summary::after {
+            content: "−";
+        }
+        .faq-item .answer {
+            padding: var(--space-sm) 0 0;
+            color: #bbb;
+        }
+        /* FOOTER */
+        .site-footer {
+            background: #111;
+            border-top: 3px solid #ff4d4d;
+            padding: var(--space-md) 0;
+            text-align: center;
+            margin-top: auto;
+        }
+        .site-footer p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        .site-footer a {
+            color: #ff4d4d;
+        }
+    </style>
 </head>
 <body>
-  <div class="glass-wrapper">
-    <header class="glass-header">
-      <div class="glass-nav-container">
-        <a href="index.html" class="glass-logo">상수 룸싸롱 GLASS</a>
-        <nav class="glass-links">
-          <a href="index.html">홈</a>
-          <a href="about.html">상세안내</a>
-          <a href="blog.html">블로그</a>
-        </nav>
-      </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">상수 룸싸롱 TOP5</a>
+            </div>
+            <nav id="main-nav">
+                <a href="/">홈</a>
+                <a href="/info" class="active">정보</a>
+                <a href="/review">리뷰</a>
+                <a href="/contact">예약</a>
+            </nav>
+            <a href="tel:010-1234-5678" class="tel-link">☎ 지금 전화</a>
+            <button class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
     <main>
-      <div class="glass-box">
-        <h2>로컬 상세 지리 가이드 및 위생 평가</h2>
-        <p>로컬 격조 높은 최고급 비즈니스 룸 정보와 정찰 단가표를 정밀 1대1 대조한 프라이빗 아카이브 포털이다 브로. 일체의 중간 유입 삐끼 거품 마찰을 완벽 차단하고, 접대의 완벽한 성공과 프라이버시 물리 차단 기술을 결합한 하이엔드 공간들만 엄선했다. 자리를 빛내기 전 반드시 형의 안심 추천 번호 📞 010-6279-0862 로 통화 상담을 완료해라. 철저한 보안 서비스다.
-      
-      성공적 접대를 마친 엘리트 브로들의 이용 평점:
-      - **상수동CEO (35, IT벤처대표)**: '중요한 바이어 접대라 010-6279-0862 로 최고급 룸 예약했는데 대접받는 느낌 지대로 받음. 정찰제라 깔끔함.'
-      - **금융맨 (31, 증권사IB)**: '로컬 근처 룸에서 회식했는데 최신 오디오 마이크 조율이 예술이라 대뇌 도파민 제대로 자극 받음. 위생도 최상.'
-      - **단골컬렉터 (33, 전문직)**: '팁 장난질 없고 추가 연장할 때 billing 마찰 없이 투명하게 영수증 찍혀 나와서 완전 힐링하고 감 브로.'</p>
-        <p>엄선 제휴 스팟들은 상수역 1번 출구, 와우산로 미술학원 거리, 상수 극동방송와 물리적으로 밀착되어 있어 초행길이라도 아주 수월하게 찾을 수 있다 브로. 📞 010-6279-0862 로 미리 다이렉트 통화를 걸어 안전지대를 확실히 선점하고 지갑 버퍼를 굳건히 수호해라 브로!</p>
-      </div>
-    </main>
+        <section class="hero-info">
+            <div class="container">
+                <h1>상수 룸싸롱 TOP5<br>찐 정보 싹 다 까발린다</h1>
+                <p>형들이 직접 발로 뛰고 목숨 걸고 취재한 정보. 가격, 위치, 서비스, 숨은 꿀팁까지. 예약 전에 이거 안 보면 형 니가 손해다.</p>
+            </div>
+        </section>
 
-    <footer class="glass-footer">
-      <p>서울특별시 상수 일대 | 연락처: 010-6279-0862</p>
-      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 상수 룸싸롱 Glass Portal. All Rights Reserved.</p>
-    </footer>
-  </div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">📍 위치 & 접근성</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="badge">★ 1위</span>
+                        <h3>더블에이</h3>
+                        <p><strong>주소:</strong> 상수동 123-5, 지하1층<br>
+                        <strong>주차:</strong> 발렛 가능 (무료 2시간)<br>
+                        <strong>대중교통:</strong> 상수역 3번 출구 도보 3분</p>
+                        <a href="tel:010-1111-2222" class="btn">전화 예약</a>
+                    </div>
+                    <div class="card">
+                        <span class="badge">★ 2위</span>
+                        <h3>라운드俱乐部</h3>
+                        <p><strong>주소:</strong> 상수동 456-10, 2층<br>
+                        <strong>주차:</strong> 건물 내 무료 주차<br>
+                        <strong>대중교통:</strong> 상수역 1번 출구 도보 5분</p>
+                        <a href="tel:010-2222-3333" class="btn">전화 예약</a>
+                    </div>
+                    <div class="card">
+                        <span class="badge">★ 3위</span>
+                        <h3>황실</h3>
+                        <p><strong>주소:</strong> 상수동 789-1, 지하2층<br>
+                        <strong>주차:</strong> 인근 공영주차장 (무료 셔틀)<br>
+                        <strong>대중교통:</strong> 상수역 2번 출구 도보 7분</p>
+                        <a href="tel:010-3333-4444" class="btn">전화 예약</a>
+                    </div>
+                    <div class="card">
+                        <span class="badge">★ 4위</span>
+                        <h3>레드룸</h3>
+                        <p><strong>주소:</strong> 상수동 321-7, 1층<br>
+                        <strong>주차:</strong> 가게 앞 2대 가능 (협소)<br>
+                        <strong>대중교통:</strong> 상수역 4번 출구 도보 2분</p>
+                        <a href="tel:010-4444-5555" class="btn">전화 예약</a>
+                    </div>
+                    <div class="card">
+                        <span class="badge">★ 5위</span>
+                        <h3>블랙박스</h3>
+                        <p><strong>주소:</strong> 상수동 654-3, 지하1층<br>
+                        <strong>주차:</strong> 발렛 (유료 5,000원)<br>
+                        <strong>대중교통:</strong> 상수역 3번 출구 도보 6분</p>
+                        <a href="tel:010-5555-6666
 </body>
 </html>
