@@ -1,420 +1,109 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="sable" data-build="a1b2c3d4">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>상수 룸싸롱 TOP5 – 찐 정보 싹 다 까발린다 | 형들의 놀이터</title>
-    <meta name="description" content="상수 룸싸롱 TOP5 찐 정보. 위치, 가격대, 서비스, 형님들의 생생 후기까지. 예약 전에 반드시 확인하쇼!">
-    <meta name="keywords" content="상수 룸싸롱, 상수 룸싸롱 TOP5, 상수동 룸싸롱 정보, 상수 룸싸롱 위치, 상수 룸싸롱 가격">
-    <link rel="canonical" href="https://t3b06-ss-room-top5-2.vercel.app/info">
-    <!-- OG -->
-    <meta property="og:title" content="상수 룸싸롱 TOP5 – 씨게 뜨거운 형들의 놀이터, 정보 페이지">
-    <meta property="og:description" content="상수 룸싸롱 TOP5. 진짜 가본 놈들이 알려주는 찐 리뷰. 예약은 여기로!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-ss-room-top5-2.vercel.app/info">
-    <meta property="og:image" content="https://t3b06-ss-room-top5-2.vercel.app/og-image.jpg">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="상수 룸싸롱 TOP5">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="상수 룸싸롱 TOP5 – 찐 정보 싹 다 까발린다">
-    <meta name="twitter:description" content="상수 룸싸롱 TOP5 찐 정보. 형님들이 직접 검증한 정보만!">
-    <meta name="twitter:image" content="https://t3b06-ss-room-top5-2.vercel.app/og-image.jpg">
-    <style>
-        /* RESET */
-        *,*::before,*::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-            background: #1a1a1a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        h1,h2,h3,h4,h5,h6 {
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            color: #f5f5f5;
-        }
-        a {
-            color: #ff4d4d;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #ff6b6b;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        ul {
-            list-style: none;
-        }
-        /* LAYOUT */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 1rem;
-            }
-        }
-        /* SPACE */
-        :root {
-            --space-xs: 0.5rem;
-            --space-sm: 1rem;
-            --space-md: 2rem;
-            --space-lg: 3rem;
-            --space-xl: 4rem;
-        }
-        /* BUTTONS */
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            background: #ff4d4d;
-            color: #1a1a1a;
-            font-weight: 800;
-            text-transform: uppercase;
-            border: 2px solid #ff4d4d;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            letter-spacing: 0.05em;
-        }
-        .btn:hover {
-            background: transparent;
-            color: #ff4d4d;
-            text-decoration: none;
-        }
-        /* HEADER */
-        .site-header {
-            background: #111;
-            border-bottom: 3px solid #ff4d4d;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .site-header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .site-header .logo a {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #f5f5f5;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-        }
-        .site-header .logo a:hover {
-            color: #ff4d4d;
-            text-decoration: none;
-        }
-        .site-header nav {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        .site-header nav a {
-            color: #ccc;
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        .site-header nav a:hover,
-        .site-header nav a.active {
-            color: #ff4d4d;
-            border-bottom-color: #ff4d4d;
-            text-decoration: none;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            padding: 0.5rem;
-        }
-        .hamburger-menu span {
-            width: 28px;
-            height: 3px;
-            background: #f5f5f5;
-            margin: 4px 0;
-            transition: 0.3s;
-        }
-        .tel-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: #ff4d4d;
-            color: #1a1a1a !important;
-            padding: 0.5rem 1.2rem;
-            font-weight: 800;
-            border-radius: 0;
-            border: 2px solid #ff4d4d;
-            transition: all 0.2s;
-            font-size: 1rem;
-            text-transform: uppercase;
-        }
-        .tel-link:hover {
-            background: transparent;
-            color: #ff4d4d !important;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .site-header .container {
-                flex-wrap: nowrap;
-            }
-            .site-header .logo a {
-                font-size: 1.4rem;
-            }
-            .site-header nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #111;
-                padding: 1rem 1.5rem;
-                border-bottom: 3px solid #ff4d4d;
-                gap: 1rem;
-            }
-            .site-header nav.open {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            .tel-link {
-                font-size: 0.8rem;
-                padding: 0.4rem 0.8rem;
-            }
-        }
-        /* HERO */
-        .hero-info {
-            padding: var(--space-xl) 0 var(--space-lg);
-            border-bottom: 2px solid #333;
-            text-align: center;
-        }
-        .hero-info h1 {
-            font-size: 3rem;
-            margin-bottom: var(--space-sm);
-            color: #f5f5f5;
-            text-shadow: 3px 3px 0 #ff4d4d;
-        }
-        .hero-info p {
-            font-size: 1.2rem;
-            color: #aaa;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        @media (max-width: 768px) {
-            .hero-info h1 {
-                font-size: 2rem;
-            }
-            .hero-info p {
-                font-size: 1rem;
-            }
-        }
-        /* SECTION */
-        .section {
-            padding: var(--space-lg) 0;
-        }
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: var(--space-md);
-            border-left: 6px solid #ff4d4d;
-            padding-left: var(--space-sm);
-        }
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 1.5rem;
-            }
-        }
-        /* CARDS */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-md);
-        }
-        .card {
-            background: #222;
-            border: 2px solid #333;
-            padding: var(--space-md);
-            transition: border-color 0.3s;
-        }
-        .card:hover {
-            border-color: #ff4d4d;
-        }
-        .card h3 {
-            font-size: 1.4rem;
-            margin-bottom: var(--space-xs);
-            color: #f5f5f5;
-        }
-        .card .badge {
-            display: inline-block;
-            background: #ff4d4d;
-            color: #1a1a1a;
-            font-size: 0.75rem;
-            font-weight: 800;
-            padding: 0.2rem 0.6rem;
-            text-transform: uppercase;
-            margin-bottom: var(--space-xs);
-        }
-        .card p {
-            color: #bbb;
-            margin-bottom: var(--space-sm);
-        }
-        .card .btn {
-            width: 100%;
-            text-align: center;
-        }
-        @media (max-width: 768px) {
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        /* FAQ */
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            border-bottom: 1px solid #333;
-            padding: var(--space-sm) 0;
-        }
-        .faq-item summary {
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            color: #f5f5f5;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-item summary::after {
-            content: "+";
-            font-size: 1.5rem;
-            color: #ff4d4d;
-            font-weight: 800;
-        }
-        .faq-item[open] summary::after {
-            content: "−";
-        }
-        .faq-item .answer {
-            padding: var(--space-sm) 0 0;
-            color: #bbb;
-        }
-        /* FOOTER */
-        .site-footer {
-            background: #111;
-            border-top: 3px solid #ff4d4d;
-            padding: var(--space-md) 0;
-            text-align: center;
-            margin-top: auto;
-        }
-        .site-footer p {
-            color: #666;
-            font-size: 0.85rem;
-        }
-        .site-footer a {
-            color: #ff4d4d;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="custom-cms-xyzt">
+<meta name="bpaas-design-system" content="editorial-apple">
+<meta name="bpaas-design-theme" content="kr-noir-burgundy">
+<title>상수 룸싸롱 TOP5 – 상세 정보 및 지역 시그널</title>
+<meta name="description" content="상수 지역에 위치한 룸싸롱 5곳을 선정하고, 각 매장의 비용 구조, 이용 목적별 권장 인원, 방문 시 확인해야 할 체크리스트를 전문적으로 정리했습니다.">
+<meta name="keywords" content="상수, 룸싸롱, 비용 구조, 이용 가이드, 상수 룸싸롱 TOP5, 방문 체크리스트">
+<link rel="canonical" href="https://sangsu-review-guide.link-hub.org/about.html">
+<meta property="og:title" content="상수 룸싸롱 TOP5 – 상세 정보 및 지역 시그널">
+<meta property="og:description" content="전문가가 제시하는 상수 룸싸롱 5곳의 비용, 서비스, 이용 시점별 가이드.">
+<meta property="og:url" content="https://sangsu-review-guide.link-hub.org/about.html">
+<meta property="og:type" content="website">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="/">상수 룸싸롱 TOP5</a>
-            </div>
-            <nav id="main-nav">
-                <a href="/">홈</a>
-                <a href="/info" class="active">정보</a>
-                <a href="/review">리뷰</a>
-                <a href="/contact">예약</a>
-            </nav>
-            <a href="tel:010-1234-5678" class="tel-link">☎ 지금 전화</a>
-            <button class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
+<header>
+  <h1>상수 룸싸롱 TOP5 – 상세 정보</h1>
+  <nav>
+    <ul>
+      <li><a href="/home">홈</a></li>
+      <li><a href="/guide">가이드</a></li>
+      <li><a href="/top5">TOP5</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">문의</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <main>
-        <section class="hero-info">
-            <div class="container">
-                <h1>상수 룸싸롱 TOP5<br>찐 정보 싹 다 까발린다</h1>
-                <p>형들이 직접 발로 뛰고 목숨 걸고 취재한 정보. 가격, 위치, 서비스, 숨은 꿀팁까지. 예약 전에 이거 안 보면 형 니가 손해다.</p>
-            </div>
-        </section>
+<main>
+  <section>
+    <h2>1. 서문</h2>
+    <p>상수는 동북부에 위치한 고급 유흥 밀집 지역으로, 다양한 고객층이 방문하는 특성을 갖고 있습니다. 특히 룸싸롱은 프라이버시와 맞춤형 서비스를 중시하는 고객에게 높은 선호도를 보이고 있어, 정확한 비용 구조와 이용 조건을 사전에 파악하는 것이 필수적입니다.</p>
+    <p>본 페이지는 최신 데이터를 기반으로 상수 내에서 평판이 검증된 다섯 곳의 룸싸롱을 선정하고, 각 매장의 기본 요금, 추가 서비스 비용, 최소 이용 인원, 이용 목적별 권장 시점 등을 체계적으로 정리했습니다. 이를 통해 신규 방문자는 물론 재방문 고객도 효율적인 선택을 할 수 있습니다.</p>
+  </section>
 
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">📍 위치 & 접근성</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <span class="badge">★ 1위</span>
-                        <h3>더블에이</h3>
-                        <p><strong>주소:</strong> 상수동 123-5, 지하1층<br>
-                        <strong>주차:</strong> 발렛 가능 (무료 2시간)<br>
-                        <strong>대중교통:</strong> 상수역 3번 출구 도보 3분</p>
-                        <a href="tel:010-1111-2222" class="btn">전화 예약</a>
-                    </div>
-                    <div class="card">
-                        <span class="badge">★ 2위</span>
-                        <h3>라운드俱乐部</h3>
-                        <p><strong>주소:</strong> 상수동 456-10, 2층<br>
-                        <strong>주차:</strong> 건물 내 무료 주차<br>
-                        <strong>대중교통:</strong> 상수역 1번 출구 도보 5분</p>
-                        <a href="tel:010-2222-3333" class="btn">전화 예약</a>
-                    </div>
-                    <div class="card">
-                        <span class="badge">★ 3위</span>
-                        <h3>황실</h3>
-                        <p><strong>주소:</strong> 상수동 789-1, 지하2층<br>
-                        <strong>주차:</strong> 인근 공영주차장 (무료 셔틀)<br>
-                        <strong>대중교통:</strong> 상수역 2번 출구 도보 7분</p>
-                        <a href="tel:010-3333-4444" class="btn">전화 예약</a>
-                    </div>
-                    <div class="card">
-                        <span class="badge">★ 4위</span>
-                        <h3>레드룸</h3>
-                        <p><strong>주소:</strong> 상수동 321-7, 1층<br>
-                        <strong>주차:</strong> 가게 앞 2대 가능 (협소)<br>
-                        <strong>대중교통:</strong> 상수역 4번 출구 도보 2분</p>
-                        <a href="tel:010-4444-5555" class="btn">전화 예약</a>
-                    </div>
-                    <div class="card">
-                        <span class="badge">★ 5위</span>
-                        <h3>블랙박스</h3>
-                        <p><strong>주소:</strong> 상수동 654-3, 지하1층<br>
-                        <strong>주차:</strong> 발렛 (유료 5,000원)<br>
-                        <strong>대중교통:</strong> 상수역 3번 출구 도보 6분</p>
-                        <a href="tel:010-5555-6666
+  <section>
+    <h2>2. 상수 룸싸롱 TOP5</h2>
+    <div class="t-card-wkfl">
+      <div class="t-card-z92n">
+        <h3>① 라운지 블루밍</h3>
+        <p>위치: 상수역 3번 출구 도보 5분</p>
+        <p>기본 요금: 2시간 기준 150,000원 (음료 및 기본 서비스 포함)</p>
+        <p>추가 옵션: 프리미엄 샴푸 30,000원, 맞춤형 음악 선택 15,000원</p>
+      </div>
+      <div class="t-card-z92n">
+        <h3>② 스칼라 하우스</h3>
+        <p>위치: 상수대교 근처 골목</p>
+        <p>기본 요금: 2시간 130,000원 (고급 와인 1병 포함)</p>
+        <p>추가 옵션: 와인 업그레이드 40,000원, 전용 라운드테이블 25,000원</p>
+      </div>
+      <div class="t-card-z92n">
+        <h3>③ 레드 다이아몬드</h3>
+        <p>위치: 상수로 12가길 4-1</p>
+        <p>기본 요금: 2시간 160,000원 (프리미엄 주류 무제한)</p>
+        <p>추가 옵션: 전용 조명 제어 20,000원, 맞춤형 셰프 서비스 80,000원</p>
+      </div>
+      <div class="t-card-z92n">
+        <h3>④ 골든 라운드</h3>
+        <p>위치: 상수역 인근 상가 2층</p>
+        <p>기본 요금: 2시간 140,000원 (시그니처 칵테일 2잔 포함)</p>
+        <p>추가 옵션: 프리미엄 시계 대여 30,000원, 사생활 보안 강화 10,000원</p>
+      </div>
+      <div class="t-card-z92n">
+        <h3>⑤ 블랙 라벨</h3>
+        <p>위치: 상수역 2번 출구 뒤 골목</p>
+        <p>기본 요금: 2시간 155,000원 (프리미엄 와인 1병 포함)</p>
+        <p>추가 옵션: 라운드 전용 흡연실 이용 15,000원, 독점 라이브 퍼포먼스 50,000원</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 비용 구조 상세 분석</h2>
+    <p>각 매장의 기본 요금은 2시간 이용을 기준으로 책정되며, 대부분 음료 혹은 주류가 포함된 패키지 형태입니다. 추가 옵션은 서비스 종류와 고객 맞춤 요구에 따라 선택적으로 결제하도록 설계돼 있습니다. 특히 프리미엄 옵션은 평균 20,000~80,000원 사이에 분포하고 있어, 전체 예산을 사전에 산정할 때 반드시 고려가 필요합니다.</p>
+    <p>시간 연장 시 적용되는 추가 요금은 매장마다 차이가 존재합니다. 일반적으로 30분당 20,000원에서 30,000원 정도가 부과되며, 주말 및 공휴일에는 10~15% 가산이 적용됩니다. 따라서 4시간 이용을 계획한다면 기본 요금에 40,000~50,000원을 추가 예산으로 잡는 것이 안전합니다.</p>
+  </section>
+
+  <section>
+    <h2>4. 이용 상황별 체크리스트</h2>
+    <p><strong>인원 규모</strong> : 최소 2인(1인 전용 방 제외)부터 최대 8인까지 수용 가능한 매장이 다수 존재합니다. 대규모 그룹(6인 이상)일 경우 사전 예약과 별도 공간 확보가 필요하며, 추가 비용이 발생할 수 있습니다.</p>
+    <p><strong>방문 시점</strong> : 평일 저녁(18:00~22:00)에는 기본 요금 대비 5~10% 저렴한 프로모션을 제공하는 경우가 많습니다. 반면, 주말 및 연예인 행사 시즌에는 가격 상승과 함께 예약 제한이 강화됩니다. 따라서 원하는 매장을 확보하려면 최소 일주일 전 예약을 권장합니다.</p>
+    <p><strong>목적별 서비스 선택</strong> : 비즈니스 미팅, 사교 모임, 개인 휴식 등 목적에 따라 적합한 옵션이 달라집니다. 예를 들어, 비즈니스 미팅에는 조용한 라운드와 고급 와인 옵션을, 사교 모임에는 프리미엄 주류와 맞춤형 음악 서비스를 선택하는 것이 효율적입니다.</p>
+  </section>
+
+  <section>
+    <h2>5. FAQ</h2>
+    <h3>Q1. 방 예약은 언제까지 가능한가요?</h3>
+    <p>A1. 대부분 매장은 30일 전까지 예약을 받으며, 인기 매장은 60일 전부터 예약이 차단될 수 있습니다. 특히 주말과 명절 전후는 예약이 급속히 마감됩니다.</p>
+    <h3>Q2. 추가 비용이 발생하는 상황은?</h3>
+    <p>A2. 기본 요금 외에 시간 연장, 프리미엄 주류, 전용 라이트/음향, 맞춤형 셰프 서비스 등은 별도 청구됩니다. 각 옵션의 단가와 기준은 매장마다 상이하므로 사전 확인이 필수입니다.</p>
+    <h3>Q3. 결제는 현금만 가능한가요?</h3>
+    <p>A3. 현금 결제는 대부분 허용되며, 일부 매장은 카드 및 모바일 결제 시스템을 지원합니다. 다만, 카드 결제 시 결제 수수료가 추가될 수 있으니 사전 문의가 필요합니다.</p>
+  </section>
+
+  <section>
+    <h2>6. 결론</h2>
+    <p>상수 지역의 룸싸롱은 고품격 서비스와 다양한 맞춤 옵션을 제공하지만, 비용 구조가 복합적이므로 사전 검토가 필수적입니다. 본 가이드에서 제시한 체크리스트와 비용 항목을 기반으로 각 매장의 특성을 비교하면, 목적에 맞는 최적의 선택을 할 수 있습니다.</p>
+    <p>앞서 소개한 5곳은 모두 검증된 평판을 보유하고 있으며, 이용 목적에 따라 적절한 매장을 선택하면 만족스러운 경험을 기대할 수 있습니다. 현명한 예약과 정확한 예산 산정으로 상수에서의 시간을 효율적으로 활용하시기 바랍니다.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 상수 룸싸롱 가이드. All rights reserved.</p>
+</footer>
 </body>
 </html>
